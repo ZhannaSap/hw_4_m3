@@ -30,7 +30,9 @@ public class ContinentAdapter extends RecyclerView.Adapter<ContinentHolder> {
     @Override
     public void onBindViewHolder(@NonNull ContinentHolder holder, int position) {
         holder.bind(listContinent.get(position));
-        holder.itemView.setOnClickListener(view -> onItemClick.onClick(position));
+        holder.itemView.setOnClickListener(view ->
+                onItemClick.onClick(position)
+        );
     }
 
     @Override
